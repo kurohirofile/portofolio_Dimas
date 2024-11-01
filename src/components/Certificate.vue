@@ -1,6 +1,6 @@
 <script setup>
 import { themeColor } from "../data/items";
-const heading = "PELATIHAN";
+const heading = "CERTIFICATE";
 const subHeading = "BEBERAPA PELATIHAN BERSERTIFIKAT";
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiCertificate   } from '@mdi/js';
@@ -46,7 +46,7 @@ const certificates = [
 </script>
 
 <template>
-  <div class="untree_co-section" id="skills">
+  <div class="untree_co-section" >
     <div class="container">
       <div class="row mb-4">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">

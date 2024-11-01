@@ -14,6 +14,13 @@
               </a>
             </li>
           </ul>
+          <div class="cta-primary">
+                  <a 
+    href="https://drive.google.com/uc?id=1lzMUboX1w-v53iM8GcbRMpyyTVhbvVP1&export=download" class="btn btn-primary" 
+    download>
+    HIRE ME
+  </a>
+                </div>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -73,7 +80,7 @@ const socialItems = [
   },
 ];
 
-const heading = "KONTAK";
+const heading = "CONTACT";
 const subHeading = "Hubungi Bisa lewat Form dibawah ini";
 const labels = {
   firstName: "First Name",

@@ -54,8 +54,8 @@ loadTheme();
             <a href="#portfolio" class="nav-link" :style="{ color: isDarkMode ? 'white' : 'black' }">PORTFOLIO</a>
           </li>
         </ul>
-        <ul class="js-clone-nav d-none mt-1 d-lg-inline-block site-menu float-right">
-          <li class="cta-primary">
+        <ul class="js-clone-nav  mt-1 d-lg-inline-block site-menu float-right">
+          <li class="cta-primary d-none d-lg-block d-md-block">
   <a 
     href="https://drive.google.com/uc?id=1lzMUboX1w-v53iM8GcbRMpyyTVhbvVP1&export=download" 
     :style="[{ backgroundColor: themeColor, marginLeft: '10px' }]" 
@@ -64,14 +64,18 @@ loadTheme();
   </a>
 </li>
 
-          <li class="cta-secondary">
-            <a href="#" @click="switchTheme"><i  v-if="!isDarkMode" class="fas fa-sun" style="color: black;"></i> 
-              <i v-if="isDarkMode" class="fas fa-moon" style="color: white;"></i></a>
-          </li>
+
+<li class="cta-secondary"   >
+  <a href="#" @click="switchTheme">
+    <i v-if="!isDarkMode" class="fas fa-sun" style="color: black; font-size: 18px;"></i> 
+    <i v-if="isDarkMode" class="fas fa-moon" style="color: white; font-size: 18px;"></i>
+  </a>
+</li>
+
         </ul>
-        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block dark d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+        <!-- <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block dark d-lg-none" data-toggle="collapse" data-target="#main-navbar">
           <span></span>
-        </a>
+        </a> -->
       </div>
     </div>
   </nav>

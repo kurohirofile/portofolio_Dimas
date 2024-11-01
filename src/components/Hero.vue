@@ -26,7 +26,7 @@ const socialItems = [
 </script>
 
 <template>
-  <div class="untree_co-hero" id="About">
+  <div class="untree_co-hero">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">
@@ -70,6 +70,13 @@ const socialItems = [
                   Saya Dimas Prasetyo, Fullstack Developer lulusan Teknik Informatika Universitas Semarang, berpengalaman dalam pengembangan aplikasi web dengan teknologi frontend seperti React.js, Vue.js, HTML, CSS, dan JavaScript,
                   <br> serta backend menggunakan Node.js, PHP, Laravel, dan CodeIgniter. Saya juga berpengalaman dengan database MySQL, MongoDB, version control Git, dan deployment di Niagahoster. Sejak Maret 2024, saya bekerja di Buds (Software House) setelah sebelumnya berkarir di CV Katalis Indonesia selama 2 Tahun dan Intership Jatismobile selama 6 Bulan.
                 </p>
+                <div class="cta-primary">
+                  <a 
+    href="https://drive.google.com/uc?id=1lzMUboX1w-v53iM8GcbRMpyyTVhbvVP1&export=download" class="btn btn-primary" 
+    download>
+    HIRE ME
+  </a>
+                </div>
               </div>
             </div>
           </div>

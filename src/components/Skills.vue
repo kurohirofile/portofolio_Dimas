@@ -1,5 +1,5 @@
 <template>
-  <div class="untree_co-section">
+  <div class="untree_co-section" id="skills">
     <div class="container">
       <div class="row mb-4">
         <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
