@@ -1,57 +1,126 @@
+<template>
+  <div class="untree_co-section" id="portfolio">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="heading">{{ heading }}</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-lg-5 order-lg-2 js-custom-dots">
+          <a
+            v-for="(project, index) in paginatedProjects"
+            :key="index"
+            :href="project.link"
+            class="service link horizontal d-flex"
+            data-aos="fade-left"
+            :data-aos-delay="index * 100"
+          >
+            <div class="service-icon color-1 mb-4">
+              <svg-icon type="mdi" :path="mdiProjector"></svg-icon>
+            </div>
+            <div class="service-contents">
+              <h3>{{ project.name }}</h3>
+              <p>{{ project.description }}</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="img-shadow">
+            <div class="owl-single no-dots owl-carousel">
+              <div class="item" v-for="(project, index) in paginatedProjects" :key="index">
+                <img :src="project.image" alt="Image" class="img-fluid" />
+                <div class="text-center mt-2" v-if="project.link !== '#'"> 
+                  <a :href="project.link" target="_blank" class="btn btn-secondary btn-lg btn-block">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination mt-4 text-center">
+        <span @click="prevPage" :class="{ disabled: currentPage.value === 1 }" class="page-number">«</span>
+        <span
+          v-for="page in totalPages"
+          :key="page"
+          @click="setPage(page)"
+          :class="{ active: currentPage.value === page }"
+          class="page-number"
+        >
+          {{ page }}
+        </span>
+        <span @click="nextPage" :class="{ disabled: currentPage.value === totalPages }" class="page-number">»</span>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 import { ref, computed } from 'vue';
 import mainPhoto from "../assets/images/pendaftaran_kerja_api.png";
-// import SvgIcon from '@jamescoyle/vue-icon';
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiProjector } from '@mdi/js';
+import spkImage from "../assets/images/spk.png";
+import dimovieImage from "../assets/images/dimovie.png";
+import datapasienImage from "../assets/images/datapasien.png";
+import landingPageImage from "../assets/images/landing_page_company.jpeg";
+import chatKatalisImage from "../assets/images/chatkatalismedia.png";
+import pendaftaranImage from "../assets/images/pendaftaran_kerja_api.png";
+import esensiaImage from "../assets/images/esensia.png";
+import catatanPenjualanImage from "../assets/images/catatan_penjualan.png";
+
 const heading = "PORTOFOLIO";
 const projects = [
   {
     name: "Sistem Pendukung Keputusan",
     description: "SPK AHP SAW menggunakan CodeIgniter dan MySQL.",
-    image: "/src/assets/images/spk.png", 
+    image: spkImage,
     link: "https://github.com/Prasdimas/SPK_Codeiginiter"
   },
   {
     name: "Movie Dim",
     description: "Website menggunakan API IMDB dengan React.",
-    image: "/src/assets/images/dimovie.png",
+    image: dimovieImage,
     link: "https://github.com/Prasdimas/dimovie"
   },
   {
     name: "Pembuatan API Laravel",
     description: "API rumah sakit sederhana dengan JWT.",
-    image: "/src/assets/images/datapasien.png",
+    image: datapasienImage,
     link: "https://github.com/Prasdimas/hospital-app"
   },
   {
     name: "Landing Page POS",
     description: "Tampilan menggunakan Vue dan Vuetify.",
-    image: "/src/assets/images/landing_page_company.jpeg",
+    image: landingPageImage,
     link: "https://github.com/Prasdimas/company-profile_vue"
   },
   {
     name: "ChatKatalis",
     description: "Website dengan API ChatGPT menggunakan React dan Node.js.",
-    image: "/src/assets/images/chatkatalismedia.png",
+    image: chatKatalisImage,
     link: "https://github.com/Prasdimas/chatkatalis"
   },
   {
     name: "API Pembuatan Form Pendaftaran Kerja",
     description: "Pengalaman membuat API dengan Laravel dan MySQL.",
-    image: "/src/assets/images/pendaftaran_kerja_api.png",
+    image: pendaftaranImage,
     link: "https://github.com/Prasdimas/api-form-laravel"
   },
   {
     name: "Esensia",
     description: "Website company profile klinik dengan WordPress.",
-    image: "/src/assets/images/esensia.png",
+    image: esensiaImage,
     link: "#"
   },
   {
     name: "Pembuatan Catatan Penjualan Rumah Sederhana",
     description: "Pembuatan jual beli menggunakan CodeIgniter dan MySQL.",
-    image: "/src/assets/images/catatan_penjualan.png",
+    image: catatanPenjualanImage,
     link: "https://github.com/Prasdimas/penjualan"
   },
 ];
@@ -82,80 +151,6 @@ const setPage = (page) => {
 };
 </script>
 
-<template>
-  <div class="untree_co-section" id="portfolio">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
-          <h2 class="heading">{{ heading }}</h2>
-        </div>
-      </div>
-
-      <div class="row justify-content-between">
-        <div class="col-lg-5 order-lg-2 js-custom-dots">
-          <a
-            v-for="(project, index) in paginatedProjects"
-            :key="index"
-            :href="project.link"
-            class="service link horizontal d-flex"
-            data-aos="fade-left"
-            :data-aos-delay="index * 100"
-          >
-          <div class="service-icon color-1 mb-4">
-            
-            <svg-icon type="mdi" :path="mdiProjector"></svg-icon>
-            <!-- <svg
-            class="bi bi-award"
-            width="1em"
-            height="1em"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M9.669 2.864a1.2 1.2 0 1 1-1.338 0l-.668 1.332a1.2 1.2 0 0 1-.676.676l-1.332.668a1.2 1.2 0 0 1 0 1.338l.668 1.332a1.2 1.2 0 0 1 .676.676l1.332.668a1.2 1.2 0 1 1 0 1.338l-.668 1.332a1.2 1.2 0 0 1 1.338 0l1.332-.668a1.2 1.2 0 0 1 .676-.676l.668-1.332a1.2 1.2 0 0 1 0-1.338l-1.332-.668a1.2 1.2 0 0 1-.676-.676l-.668-1.332zM8 0c-1.654 0-3 1.346-3 3 0 .69.227 1.332.615 1.847A3.973 3.973 0 0 0 5 3a3 3 0 1 1 6 0c0 .003-.002.006-.002.009A3.973 3.973 0 0 0 12 3c.183 0 .36.019.533.054A2.993 2.993 0 0 0 16 3c0-1.654-1.346-3-3-3h-5z"/>
-          </svg> -->
-        </div>
-            <div class="service-contents">
-              <h3>{{ project.name }}</h3>
-              <p>{{ project.description }}</p>
-            
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="img-shadow">
-            <div class="owl-single no-dots owl-carousel">
-              <div class="item" v-for="(project, index) in paginatedProjects" :key="index">
-  <img :src="project.image" alt="Image" class="img-fluid" />
-  <div class="text-center mt-2" v-if="project.link !== '#'"> 
-    <a :href="project.link" target="_blank" class="btn btn-secondary btn-lg btn-block">Source Code</a>
-  </div>
-</div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pagination -->
-      <div class="pagination mt-4 text-center">
-        <span @click="prevPage" :class="{ disabled: currentPage.value === 1 }" class="page-number">«</span>
-        <span
-          v-for="page in totalPages"
-          :key="page"
-          @click="setPage(page)"
-          :class="{ active: currentPage.value === page }"
-          class="page-number"
-        >
-          {{ page }}
-        </span>
-        <span @click="nextPage" :class="{ disabled: currentPage.value === totalPages }" class="page-number">»</span>
-      </div>
-    </div>
-  </div>
-</template>
-
 <style scoped>
 .pagination {
   display: flex;
@@ -185,5 +180,4 @@ const setPage = (page) => {
   cursor: not-allowed;
   opacity: 0.5;
 }
-
 </style>
