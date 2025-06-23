@@ -72,7 +72,7 @@ const socialItems = [
                 </p>
                 <div class="cta-primary">
                   <a 
-    href="https://drive.google.com/uc?id=1lzMUboX1w-v53iM8GcbRMpyyTVhbvVP1&export=download" class="btn btn-primary" 
+    href="https://drive.google.com/file/d/1vZfku8-igHU2_MAUio95VRbbX3Vscy_p/view?usp=sharing" class="btn btn-primary" 
     download>
     HIRE ME
   </a>
