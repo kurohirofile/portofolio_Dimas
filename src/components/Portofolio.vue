@@ -71,10 +71,38 @@ import landingPageImage from "../assets/images/landing_page_company.jpeg";
 import chatKatalisImage from "../assets/images/chatkatalismedia.png";
 import pendaftaranImage from "../assets/images/pendaftaran_kerja_api.png";
 import esensiaImage from "../assets/images/esensia.png";
+import sibambo from "../assets/images/sibambo.png";
+import sikons from "../assets/images/sikons.png";
+import pintaraja from "../assets/images/pintaraja.png";
+import portalsibambo from "../assets/images/portalsibambo.png";
 import catatanPenjualanImage from "../assets/images/catatan_penjualan.png";
 
 const heading = "PORTOFOLIO";
 const projects = [
+  {
+    name: "ERP Sibambo",
+    description: "Sistem ERP menggunakan Codeigniter dan Vue JS.",
+    image: sibambo,
+    link: "https://infinite.sibambo.id/"
+  },
+  {
+    name: "Pintaraja",
+    description: "Sistem untuk membantu mahasiswa dengan API OpenAi Laravel dan vue js.",
+    image: pintaraja,
+    link: "https://pintaraja.com/"
+  },
+  {
+    name: "Statistik Customer",
+    description: "Progress dari tiap project untuk Customer Laravel dan Vue JS.",
+    image: portalsibambo,
+    link: "https://portal.sibambo.id/"
+  },
+  {
+    name: "ERP sikons",
+    description: "sistem untuk pengelolaan Project Codeigniter dan Vue JS.",
+    image: sikons,
+    link: "https://github.com/Prasdimas/SPK_Codeiginiter"
+  },
   {
     name: "Sistem Pendukung Keputusan",
     description: "SPK AHP SAW menggunakan CodeIgniter dan MySQL.",
@@ -82,8 +110,8 @@ const projects = [
     link: "https://github.com/Prasdimas/SPK_Codeiginiter"
   },
   {
-    name: "Movie Dim",
-    description: "Website menggunakan API IMDB dengan React.",
+    name: "Youtube Clone",
+    description: "Pembuatan Youtube clone dengan API rapidot dan vue js.",
     image: dimovieImage,
     link: "https://github.com/Prasdimas/dimovie"
   },
