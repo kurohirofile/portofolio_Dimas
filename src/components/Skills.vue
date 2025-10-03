@@ -32,7 +32,7 @@
 
 <script setup>
 import SvgIcon from '@jamescoyle/vue-icon';
-import { mdiReact, mdiVuejs , mdiVuetify,mdiGithub , mdiTailwind, mdiLanguageJavascript,mdiLaravel,mdiFireCircle,mdiDolphin,mdiNodejs,mdiAlphaF,mdiLanguagePhp,mdiWordpress   } from '@mdi/js';
+import { mdiReact,mdiAndroid ,mdiVuejs , mdiVuetify,mdiGithub , mdiTailwind, mdiLanguageJavascript,mdiLaravel,mdiFireCircle,mdiDolphin,mdiNodejs,mdiAlphaF,mdiLanguagePhp,mdiWordpress   } from '@mdi/js';
 
 // Mendeklarasikan heading dan items
 const heading = "SKILLS";
@@ -104,6 +104,14 @@ const items = [
     title: "Laravel",
     description: "Framework PHP yang kuat untuk pengembangan aplikasi web.",
 },
+  {
+  iconBg: "background-color: #02569B", // Warna biru khas Flutter
+  icon: mdiAndroid, // Pastikan Anda sudah mengimpor ikon Flutter dari Material Design Icons
+  title: "Flutter",
+  description: "Framework UI open-source dari Google untuk membangun aplikasi mobile lintas platform secara efisien.",
+
+},
+
 {
     iconBg: "background-color: #00758F", // Warna biru untuk MySQL
     icon: mdiDolphin,

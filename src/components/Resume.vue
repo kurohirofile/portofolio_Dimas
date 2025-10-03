@@ -26,45 +26,61 @@ const education = [
   }
 ];
 const workExperience = [
+    {
+    position: "IT / Webmaster",
+    company: "Beritajateng.tv",
+    location: "Semarang, Jawa Tengah",
+    duration: "Juli 2025 - September 2025",
+    tasks: [
+      "Melakukan perbaikan dan pemeliharaan website.",
+      "Melaksanakan migrasi integrasi antara Facebook dan WordPress.",
+      "Mengembangkan plugin sederhana untuk kebutuhan website.",
+      "Melakukan optimasi SEO untuk meningkatkan visibilitas di mesin pencari."
+    ]
+  },
 {
-          position: "Full Stack Developer",
-          company: "BUDS (Software House)",
-          location: "Semarang, Jawa Tengah",
-          duration: "April 2024 - Sekarang",
-          tasks: [
-            "Melakukan Pembuatan software",
-            "Melakukan Perbaikan Pada Website",
-            "Pembuatan API menggunakan Codeigniter",
-            "Pembuatan Frontend menggunakan Vue.js",
-            "Pembuatan Tampilan dan API menggunakan Laravel dengan Vue.js"
-          ]
-        },
-        {
-          position: "Staff IT",
-          company: "CV Katalis Indonesia",
-          location: "Semarang, Jawa Tengah",
-          duration: "Maret 2022 - Maret 2024",
-          tasks: [
-            "Melakukan Pembuatan website dan mengiklankan Website dengan WordPress",
-            "Melakukan Perbaikan Pada Website",
-            "Pembuatan Landing page dengan menggunakan WordPress",
-            "Melakukan Pembuatan Website generator Konten dengan Menggunakan React.js dan Node.js",
-            "Melakukan Pemasangan Iklan di Facebook, Instagram dan Google",
-            "Melakukan Optimasi Konten SEO"
-          ]
-        },
-        {
-          position: "IT Developer (Magang)",
-          company: "Jatis Mobile",
-          location: "Jakarta, DKI Jakarta",
-          duration: "5 Oktober 2021 - 03 Februari 2022",
-          tasks: [
-            "Melakukan Pembuatan Chatbot menggunakan API Dengan Node.js",
-            "Mengatur database MySQL",
-            "Mempelajari Active MQ untuk microservice"
-          ]
-        }
-]
+    position: "Full Stack Developer",
+    company: "BUDS (Software House)",
+    location: "Semarang, Jawa Tengah",
+    duration: "Maret 2024 - Maret 2025",
+    tasks: [
+      "Membangun dan mengembangkan software internal perusahaan.",
+      "Melakukan perbaikan dan pemeliharaan website yang telah berjalan.",
+      "Membuat REST API menggunakan CodeIgniter 3 untuk integrasi antar sistem.",
+      "Mengembangkan frontend interaktif menggunakan Vue.js dan Vuetify.",
+      "Membangun API dan tampilan modular dengan Laravel dan Vue.js.",
+      "Mengerjakan ERP custom menggunakan CodeIgniter 3 dan Vue.js + Vuetify dengan MySQL.",
+      "Berkolaborasi dengan tim untuk merancang dan menerapkan fitur baru."
+    ]
+  },
+  {
+    position: "Staff IT",
+    company: "CV Katalis Indonesia",
+    location: "Semarang, Jawa Tengah",
+    duration: "Maret 2022 - Maret 2024",
+    tasks: [
+      "Membuat dan mengelola website menggunakan WordPress.",
+      "Mengatur plugin, tema, dan layout sesuai kebutuhan klien.",
+      "Membuat strategi iklan untuk meningkatkan trafik website.",
+      "Membangun landing page yang menarik dan responsif.",
+      "Membuat website generator konten dengan React.js dan Node.js.",
+      "Mengoptimasi SEO: kata kunci, meta tag, kecepatan, dan struktur URL.",
+      "Mengatur email hosting dan konfigurasi server."
+    ]
+  },
+  {
+    position: "IT Developer (Magang)",
+    company: "Jatis Mobile",
+    location: "Jakarta, DKI Jakarta",
+    duration: "5 Oktober 2021 - 3 Februari 2022",
+    tasks: [
+      "Membuat chatbot menggunakan API dan Node.js.",
+      "Membuat API dari Meta Developer.",
+      "Mengelola database MySQL.",
+      "Mempelajari ActiveMQ untuk sistem microservice."
+    ]
+  }
+];
 
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiSitemapOutline  } from '@mdi/js';

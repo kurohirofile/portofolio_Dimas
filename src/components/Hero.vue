@@ -67,12 +67,12 @@ const socialItems = [
               </h2>
               <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
                 <p>
-                  Saya Dimas Prasetyo, Fullstack Developer lulusan Teknik Informatika Universitas Semarang, berpengalaman dalam pengembangan aplikasi web dengan teknologi frontend seperti React.js, Vue.js, HTML, CSS, dan JavaScript,
-                  <br> serta backend menggunakan Node.js, PHP, Laravel, dan CodeIgniter. Saya juga berpengalaman dengan database MySQL, MongoDB, version control Git, dan deployment di Niagahoster. Sejak Maret 2024, saya bekerja di Buds (Software House) setelah sebelumnya berkarir di CV Katalis Indonesia selama 2 Tahun dan Intership Jatismobile selama 6 Bulan.
+                 Lulusan Teknik Informatika Universitas Semarang dengan pengalaman lebih dari 2 tahun di bidang pengembangan perangkat lunak. Pernah bekerja sebagai Staff IT di CV Katalis Indonesia dan Full Stack Programmer, saya memiliki kemampuan dalam membangun dan mengelola website menggunakan teknologi seperti Vue.js, React.js, Node.js, Laravel, dan CodeIgniter.
+                  <br> Selain itu, saya juga berpengalaman dalam pembuatan website berbasis WordPress, pengelolaan iklan digital, dan pengembangan aplikasi sederhana menggunakan Flutter. Saya antusias mempelajari teknologi baru, mampu bekerja dalam tim, dan berorientasi pada solusi.
                 </p>
                 <div class="cta-primary">
                   <a 
-    href="https://drive.google.com/file/d/1vZfku8-igHU2_MAUio95VRbbX3Vscy_p/view?usp=sharing" class="btn btn-primary" 
+    href="https://drive.google.com/file/d/1OKRS5BQqXi5U4vwNit6lXBdvbIgjy96A/view?usp=sharing" class="btn btn-primary" 
     download>
     HIRE ME
   </a>

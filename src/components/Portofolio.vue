@@ -61,7 +61,8 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import mainPhoto from "../assets/images/pendaftaran_kerja_api.png";
+import simplelogin from "../assets/images/simplelogin.png";
+
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiProjector } from '@mdi/js';
 import spkImage from "../assets/images/spk.png";
@@ -70,7 +71,7 @@ import datapasienImage from "../assets/images/datapasien.png";
 import landingPageImage from "../assets/images/landing_page_company.jpeg";
 import chatKatalisImage from "../assets/images/chatkatalismedia.png";
 import pendaftaranImage from "../assets/images/pendaftaran_kerja_api.png";
-import esensiaImage from "../assets/images/esensia.png";
+import makanyuk from "../assets/images/makanyuk.png";
 import sibambo from "../assets/images/sibambo.png";
 import sikons from "../assets/images/sikons.png";
 import pintaraja from "../assets/images/pintaraja.png";
@@ -140,9 +141,15 @@ const projects = [
     link: "https://github.com/Prasdimas/api-form-laravel"
   },
   {
-    name: "Esensia",
-    description: "Website company profile klinik dengan WordPress.",
-    image: esensiaImage,
+    name: "Simple App",
+    description: "Aplikasi dengan fitur login menggunakan api dibuat menggunakan flutter dengan API.",
+    image: simplelogin,
+    link: "#"
+  },
+  {
+    name: "MakanYuk",
+    description: "Aplikasi dengan fitur search data makanan menggunakan api dibuat menggunakan flutter dengan API.",
+    image: makanyuk,
     link: "#"
   },
   {
